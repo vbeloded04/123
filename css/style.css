@@ -1,0 +1,370 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#toTop {
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 40px;
+	background: aqua;
+	text-align: center;
+	padding: 5px;
+	position: fixed;
+	bottom: 10px;
+	/* отступ кнопки от нижнего края страницы*/
+	right: 10px;
+	cursor: pointer;
+	display: none;
+	color: #000;
+	font-family: verdana;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.toTop-flex{
+	padding: 20%;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	width: 100%;
+	background: #000000;
+	display: flex;
+}
+
+.header__logo {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 24px;
+	color: #FFFFFF;
+	cursor: pointer;
+	margin-top: 56px;
+	margin-left: 12%;
+}
+
+nav {
+	margin-top: 56px;
+	margin-left: 30%;
+}
+
+.topnav a {
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	padding: 12px 16px;
+	font-weight: bold;
+}
+
+.topnav a {
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	padding: 12px 16px;
+	font-weight: bold;
+}
+
+.topnav a:hover {
+	border-bottom: 5px solid #fcac45;
+}
+
+.icon{
+	display: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+main .main__welcome {
+	background: #000000;
+	text-align: center;
+	padding: 200px 0 410px 0;
+}
+
+main .main__welcome p {
+	color: #999999;
+	font-size: 20px;
+}
+
+main .main__welcome h1 {
+	color: #999999;
+	font-size: 44px;
+}
+
+main .main__welcome h1:after {
+	display: none;
+}
+
+.mycompany {
+	color: #fcac45;
+}
+
+.wrapper {
+	width: 76%;
+	margin: 0 auto;
+}
+
+main .main__about {
+	display: flex;
+	padding: 100px 0 100px 0;
+}
+
+.about__right {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	margin-left: 175px;
+}
+
+.about__right h1 {
+	display: inline-block;
+	border-bottom: 3px solid #fcac45;
+	padding-bottom: 20px;
+}
+
+.about__right h1:after {
+	display: none;
+}
+
+.about__right p {
+	margin: 30px 0 50px 0;
+	font-size: 17px;
+}
+
+.about__right li {
+	background: url(mark.png) 0px no-repeat;
+	padding-left: 25px;
+}
+.mv-100{
+    min-width: 100%;
+}
+
+.main_team {
+	background: #000;
+	text-align: center;
+	padding: 100px 0 165px 0;
+	color: #d7d7d7;
+}
+
+.main_team h1 {
+	font-size: 44px;
+	padding-bottom: 30px;
+}
+
+
+/*.line{
+    width: 100px;
+    height:3px;
+    background: #fcac45;
+    position: relative;
+    left: 45.5%;
+    margin-bottom: 105px;
+    }*/
+
+.photo {
+	background: #d7d7d7;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+}
+
+.team_cards {
+	margin: auto;
+	display: flex;
+	margin-left: 28%;
+	display:flex;
+	 justify-content: center ;
+}
+
+.card {
+	margin-right: 45px;
+	display:flex;
+			 justify-content: center ;
+}
+
+.name {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.contact_wrapper {
+	width: 753px;
+	margin: 0 auto;
+	color: #636363;
+	padding: 100px 0 100px 0;
+}
+
+.contact_form h1 {
+	text-align: center;
+	font-size: 44px;
+	color: black;
+	margin-top: 100px;
+}
+
+.form_inputs {
+	margin-top: 30px;
+	display: flex;
+}
+
+input {
+	width: 360px;
+	height: 40px;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+input:first-of-type {
+	margin-right: 23px;
+}
+
+.red {
+	color: red;
+}
+
+textarea {
+	width: 100%;
+	height: 163px;
+}
+
+input,
+textarea {
+	border: 1px solid #999999;
+	margin-top: 5px;
+}
+
+.button_blok {
+	display: flex;
+	justify-content: flex-end;
+}
+
+input[type=submit] {
+	width: 165px;
+	height: 40px;
+	background: #fcac45;
+	color: #000;
+	margin-right: 0;
+	margin-top: 20px;
+}
+
+form {
+	text-align: left;
+}
+
+h1:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	padding-top: 30px;
+	border-bottom: 3px solid #fcac45;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+}
+
+.social img {
+	margin-left: 12px;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	padding: 30px 0 30px 0;
+	background: #222222
+}
+
+.social img:hover {
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 1105px) {
+	nav {
+		margin-left: 20%;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.topnav a {
+		display: none;
+	}
+	a.icon {
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: #ffffff;
+		font-size: 25px;
+		margin-right: 1em;
+	}
+	nav {
+		width: 100%;
+	}
+	.topnav.responsive {
+		position: relative;
+		top: 50px;
+		left: -200px;
+	}
+	header .topnav.responsive {
+		height: 340px;
+	}
+	.topnav.responsive a.icon{
+		position: absolute;
+		top: -50px;
+		left: -200px;
+	}
+	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.team_cards {
+		flex-direction: column;
+	}
+	
+	.about__right {
+		margin-left: 175px;
+        display: flex;
+
+    }
+    .about__right p{
+    font-size: 15px;
+
+    }
+    .about__right h1{
+        margin-top: 15px ;
+
+        }
+
+    .mw-100{
+        max-width: 100%;
+
+    }
+    .main__about{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .about__right{
+        text-align: center;
+        margin-left: 0;
+    }
+	.contact_form{
+		display: none;
+	}
