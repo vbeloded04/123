@@ -9,7 +9,8 @@
 
 <title>Велосервис</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
+<script type="text/javascritp" src="/javascript/jquery.js"></script>
+<script type="text/javascritp" src="/javascript/form 1.js"></script>
 <script type="text/javascript">
 
 $(function() {
@@ -135,18 +136,18 @@ $('body,html').animate({scrollTop:0},800);
 <section class="contact_form">
 <h1 id="2">ОБРАТНАЯ СВЯЗЬ</h1>
 <div class="contact_wrapper">
-<form action="#" name="newform" method="post">
+<form action="mail.php" name="newform" method="post">
 <div class="form_inputs">
-<p>Name<span class="red">*</span><input type="text"></p>
+<p>Name<span class="red">*</span><input type="text" name="user_name"></p>
 
-<p>Email address<span class="red">*</span><input type="text"></p>
+<p>Email address<span class="red">*</span><input type="text" name="user_email"></p>
 <!--
 <input type="hidden" name="project_name" value="Site Name">
 <input type="hidden" name="admin_email" value="admin@mail.com">
 <input type="hidden" name="form_subject" value="Form Subject">
  текст -->
 </div>
-<p >Message<span class="red">*</span></p>
+<p >Message<span class="red" >*</span></p>
 <textarea name="text"></textarea>
 <div class="button_blok">
 <input type="submit" value="SEND">
