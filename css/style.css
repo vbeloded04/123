@@ -154,11 +154,12 @@ main .main__about {
     min-width: 100%;
 }
 
-.main_team {
+/*.main_team {
 	background: #000;
 	text-align: center;
 	padding: 100px 0 165px 0;
 	color: #d7d7d7;
+	position: relative;
 }
 
 .main_team h1 {
@@ -174,7 +175,7 @@ main .main__about {
     position: relative;
     left: 45.5%;
     margin-bottom: 105px;
-    }*/
+    }
 
 .photo {
 	background: #d7d7d7;
@@ -190,11 +191,32 @@ main .main__about {
 	display:flex;
 	 justify-content: center ;
 }
-
+*/
+.main_team{
+    background: #000;
+    text-align: center;
+    padding: 100px 0 165px 0;
+    color: #d7d7d7;
+}
+.main_team h1{
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+.photo{
+    background:#d7d7d7 ;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.team_cards{
+	display: flex;
+	justify-content: center;
+}
 .card {
-	margin-right: 45px;
-	display:flex;
-			 justify-content: center ;
+	margin-right: 30px;
+
+}
 }
 
 .name {
@@ -293,7 +315,53 @@ footer {
 .social img:hover {
 	opacity: 0.6;
 }
+/*
+@media screen and (max-width: 800px) {
+	.team_cards {
+		margin: auto;
+		display: flex;
+		margin-left: 15%;
+		display:flex;
+		 justify-content: center ;
+	}
+}
+*/
+@media screen and (max-width: 800px) {
+.team_cards {
+	flex-direction: column;
+	}
+.form_inputs{
+	flex-direction: column;
+}
 
+input {
+	width: 200px;
+}
+textarea {
+	width: 200px;
+	height: 100px;
+}
+.photo {
+	background: #d7d7d7;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+input[type=submit] {
+	width: 165px;
+	height: 40px;
+	background: #fcac45;
+	color: #000;
+	margin-right: 0;
+	margin-top: 20px;
+}
+.contact_wrapper {
+	width: 200px;
+	margin: 0 auto;
+	color: #636363;
+	padding: 100px 0 100px 0;
+}
+}
 @media screen and (max-width: 1105px) {
 	nav {
 		margin-left: 20%;
@@ -333,9 +401,7 @@ footer {
 		display: block;
 		text-align: left;
 	}
-	.team_cards {
-		flex-direction: column;
-	}
+
 	
 	.about__right {
 		margin-left: 175px;
@@ -365,6 +431,16 @@ footer {
         text-align: center;
         margin-left: 0;
     }
-	.contact_form{
-		display: none;
+	
+	.card{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 500px;
+		margin-bottom: 40px;
+		flex-direction: column;
 	}
+
+
+
+	
